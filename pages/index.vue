@@ -12,7 +12,7 @@ const { data } = await useFetch('/api/tickers?limit=10');
                     <th>Name</th>
                     <th>Symbol</th>
                     <th>Price</th>
-                    <th>Details</th>
+                    <th>Details</th> 
                 </tr>
             </thead>
             <tr v-for="currency in data.data" :key="data.data.id">
