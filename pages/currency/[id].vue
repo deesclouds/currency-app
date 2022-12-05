@@ -1,5 +1,5 @@
 <script setup>
-const route = useRouter()
+const route = useRoute()
 const { data } = await useFetch('/api/ticker?id=' + route.params.id)
 const coin = data.value[0]
 </script>
